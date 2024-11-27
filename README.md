@@ -1,3 +1,4 @@
+![image](https://github.com/user-attachments/assets/cf1b94ed-8f29-4d10-8933-8dedd8cdd40d)
 # Integrated Disease Prediction and E-Appointment Schedular with Admin Panel
 ## Overview
 This project is designed to improve healthcare access in rural areas by leveraging machine learning to optimize appointment scheduling and providing an intuitive admin panel for healthcare providers. It addresses challenges like limited medical resources, long travel distances, and irregular availability of healthcare professionals, ensuring more efficient and accessible service delivery.
