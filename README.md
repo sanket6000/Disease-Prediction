@@ -10,10 +10,10 @@ This project is designed to improve healthcare access in rural areas by leveragi
 5. User-Centric Design: Simplifies healthcare management, ensuring a better experience for providers and patients.
    
 ## Technologies Used
-> Backend: Java
-> Machine Learning: Python
-> Database: MySQ
-> Frontend: React, HTML/CSS, JavaScript
+ Backend: Java
+ Machine Learning: Python
+ Database: MySQL
+ Frontend: React, HTML/CSS, JavaScript
 
 ## Installation
 1. Clone the repository: git clone https://github.com/your-username/your-repo-name.git  
@@ -29,6 +29,18 @@ This project is designed to improve healthcare access in rural areas by leveragi
    > Schedule appointments conveniently based on availability.
 3. System Intelligence:
    > Optimizes schedules and predicts resource allocation to reduce waiting times.
+
+## Screenshots
+##### Homepage Page
+   ![image](https://github.com/user-attachments/assets/f84a29e1-58bc-41be-acf4-e60f42bc83a5)
+##### Register/Login Page
+   ![image](https://github.com/user-attachments/assets/6a13f890-5097-4229-8734-4389c6e5bb11)
+##### Admin Dashboard
+   ![image](https://github.com/user-attachments/assets/73468b13-01a0-4d8f-ba18-3b8df2db2820)
+##### Predict Disease Page
+   ![image](https://github.com/user-attachments/assets/9c8a25ad-758e-481c-913b-fbbcf7940bfc)
+##### Appointment Scheduling Interface
+   ![image](https://github.com/user-attachments/assets/72d96a2d-8366-4c96-bf98-99252d029d27)
 
 ## License
 This project is licensed under the MIT License.
