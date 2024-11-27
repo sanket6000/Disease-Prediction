@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services</title>
+    <!-- Font Awesome CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+
+    <link rel="stylesheet" href="{% static 'css/services.css' %}" />
+  </head>
+  <body>
+    <section>
+      <div class="row">
+        <h2 class="section-heading">Our Services</h2>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <i class="fas-solid fa-stomach"></i>
+            <div class="icon-wrapper"></div>
+            <h3>Dr. Bhurat-Gastrologist</h3>
+            <p>
+              Physician specializing in stomach research, its structure,
+              functions, and illnesses.
+            </p>
+            <a href="schedule">
+            <button type="button" class="btn btn-outline-secondary"> Book An Appointment
+            </button>
+          </a>
+          </div>
+          
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="fa-solid fa-kidneys"></i>
+            </div>
+            <h3>Dr. Mahajan-Urologist</h3>
+            <p>
+              A urologist is a doctor who specializes in diagnosing and treating
+              diseases of the urinary system. This system keeps the body clean
+              by filtering out wastes and toxins and taking them out of the
+              body.
+            </p>
+            <a href="schedule">
+              <button type="button" class="btn btn-outline-secondary"> Book An Appointment
+              </button>
+            </a>
+          </div>
+          
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="fa-solid fa-shield-exclamation"></i>
+            </div>
+            <h3>Dr. Rathod-Allergist</h3>
+            <p>
+              An allergist is a physician specially trained to diagnose, treat
+              and manage allergies, asthma and immunologic disorders including
+              primary immunodeficiency disorders.
+            </p>
+            <a href="schedule">
+              <button type="button" class="btn btn-outline-secondary"> Book An Appointment
+              </button>
+            </a>
+          </div>
+          
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <h3>Dr. Deshmukh-Neurologist</h3>
+            <p>
+              Neurologists are specialists who treat diseases of the brain and
+              spinal cord, peripheral nerves and muscles. Neurological
+              conditions include epilepsy, stroke, multiple sclerosis (MS) and
+              Parkinson's disease.
+            </p>
+            <a href="{% url 'book' doctor='Dr. Deshmukh' patient='pushkar' %}">
+              <button type="button" class="btn btn-outline-secondary"> Book An Appointment
+              </button>
+            </a>
+          </div>
+          
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="fa-solid fa-user-doctor"></i>
+            </div>
+            <h3>Dr. Joshi-General physician</h3>
+            <p>
+              General physicians are health professionals who operate on
+              patients to repair injuries, correct deformities, prevent
+              diseases, and generally improve the health of patients.
+            </p>
+            <a href="{% url 'book' doctor='Dr. Joshi' patient='pushkar' %}">
+              <button type="button" class="btn btn-outline-secondary"> Book An Appointment
+              </button>
+            </a>
+          </div>
+          
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="fa-solid fa-bone"></i>
+            </div>
+            <h3>Dr. Rathi-Orthopaedic</h3>
+            <p>
+              Orthopedic physicians are doctors who specialize in injuries of
+              the musculoskeletal system — which includes bones, joints,
+              ligaments, nerves, and tendons.
+            </p>
+            <a href="{% url 'book' doctor='Dr. Rathi' patient='pushkar' %}">
+              <button type="button" class="btn btn-outline-secondary"> Book An Appointment
+              </button>
+            </a>
+          </div>
+          
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="fa-solid fa-crab"></i>
+            </div>
+            <h3>Dr. Lomte-Endocrinologist(Diabetic Specialist)</h3>
+            <p>
+              Endocrinologists are qualified to diagnose and treat conditions
+              like diabetes, thyroid diseases, infertility, growth issues,
+              metabolic disorders, osteoporosis, some cancers, and disorders in
+              the hormone-producing adrenal glands and pituitary glands.
+            </p>
+            <a href="{% url 'book' doctor='Dr. Lomte' patient='pushkar' %}">
+              <button type="button" class="btn btn-outline-secondary"> Book An Appointment
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="fa-solid fa-hand-dots"></i>
+            </div>
+            <h3>Dr. Kale-Skin Specialist</h3>
+            <p>
+              A dermatologist/skin specialist is a doctor who specializes in
+              conditions involving the skin, hair, and nails. These conditions
+              include eczema, psoriasis, and skin cancer, among many others.
+            </p>
+            <a href="{% url 'book' doctor='Dr. Kale' patient='pushkar' %}">
+              <button type="button" class="btn btn-outline-secondary"> Book An Appointment
+              </button>
+            </a>
+          </div>
+          
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <h3>Dr. Deodhar-Cardiologist</h3>
+            <p>
+              Cardiologists diagnose, assess and treat patients with defects and
+              diseases of the heart and the blood vessels, which are known as
+              the cardiovascular system.
+            </p>
+            <a href="{% url 'book' doctor='Dr. Deodhar' patient='pushkar' %}">
+              <button type="button" class="btn btn-outline-secondary"> Book An Appointment
+              </button>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

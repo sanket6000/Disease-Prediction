@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+
+  <link rel="stylesheet" href="{% static 'css/schedule.css' %}" />
+  <meta charset="utf-8" />
+  {% comment %}
+  <style>
+    /* #booking_btn_show{
+        display: {{ show_book_btn }};
+      } */
+  </style>
+  {% endcomment %}
+  <title>
+    Schedule An Appointment
+  </title>
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+
+<!-- <body>
+  <div>
+  <img src="{% static 'img/appointment.avif' %}" alt="" style="margin-top: -96px; margin-left: 220px; position: absolute;" width="75%" height="99.8%">
+  <div class="landing-page" style="position: relative;"> 
+    <div class="form-appointment" style="position: relative;>
+      <div class="wpcf7" id="wpcf7-f560-p590-o1">
+        <form method="post" action="schedule_apt">
+          {% csrf_token%}
+          <div class="group">
+            <div style="width: 100%; float: left">
+              <span class="wpcf7-form-control-wrap text-680"><input type="text" name="name" value="" size="45"
+                  class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true"
+                  placeholder="Name" /></span><br />
+              <span class="wpcf7-form-control-wrap email-680"><input type="email" name="email" value="" size="45"
+                  class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
+                  aria-required="true" placeholder="Email" /></span><br />
+              <span class="wpcf7-form-control-wrap tel-630"><input type="tel" name="phone" value="" size="45"
+                  class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel"
+                  aria-required="true" placeholder="Phone" /></span><br />
+              <span class="wpcf7-form-control-wrap tel-630">
+                <div class="container">
+                  <div class="row">
+                     <div class='col-sm-6'>
+                        <div class="form-group">
+                           <div class='input-group date' id='datetimepicker3'>
+                              <input type='date' name="date" class="form-control" />
+                              <span class="input-group-addon">
+                              <span class="glyphicon glyphicon-time"></span>
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                     
+                  </div>
+               </div>
+
+              </span>
+              <div><label for="docotr">Doctor: </label>
+                <select class="form-select" id="sid" name="doctor" size="0">
+                  {% for dr in drs %}
+                  <option value="{{ dr }}">{{ dr }}</option>
+                  {% endfor %}
+                </select>
+              </div>
+            </div>
+            <div>
+
+              <script type="text/javascript">
+                 $(function () {
+                     $('#datetimepicker3').datetimepicker({
+                         format: 'LT'
+                     });
+                 });
+              </script>
+              </div>
+              
+            </div>
+            
+            
+            <div style=" margin: 10px;">
+              <input type="submit" class="btn btn-primary" value="Book Appointment" style="color: black;"></input>
+            </div>
+        </form>
+        {% if messages %} {% for message in messages %}
+              <div class="alert alert-warning" role="alert">{{message}}</div>
+              {%endfor%} {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+</body> -->
+
+
+<body>
+  <div>
+    <img src="{% static 'img/appointment.avif' %}" alt="" style="margin-top: -96px; margin-left: 220px; position: absolute;" width="75%" height="99.8%">
+    <div class="landing-page"> 
+      <div class="form-appointment" style="position: fixed; margin: 150px 0px 0px 120px; border-radius: 20px; background-color: #cc7af2d9; border: 4px solid;">
+        <div class="wpcf7" id="wpcf7-f560-p590-o1">
+          <form method="post" action="schedule_apt">
+            {% csrf_token%}
+            <div class="group">
+              <div style="width: 100%; float: left">
+                <span class="wpcf7-form-control-wrap text-680"><input type="text" name="name" value="" size="45"
+                    class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true"
+                    placeholder="Name" style="border: 3px solid black;"/></span><br />
+                <span class="wpcf7-form-control-wrap email-680"><input type="email" name="email" value="" size="45"
+                    class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
+                    aria-required="true" placeholder="Email" style="border: 3px solid black;"/></span><br />
+                <span class="wpcf7-form-control-wrap tel-630"><input type="tel" name="phone" value="" size="45"
+                    class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel"
+                    aria-required="true" placeholder="Phone" style="border: 3px solid black;"/></span><br />
+                <span class="wpcf7-form-control-wrap tel-630">
+                  <div class="container">
+                    <div class="row">
+                       <div class='col-sm-6' style="margin-left: -15px;">
+                          <div class="form-group">
+                             <div class='input-group date' id='datetimepicker3'>
+                                <input type='date' name="date" class="form-control" style="border: 3px solid black; font-size: 22px;"/>
+                                <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-time"></span>
+                                </span>
+                             </div>
+                          </div>
+                       </div>
+                       
+                    </div>
+                 </div>
+  
+                </span>
+                <div><label for="docotr" style="font-size: 24px; font-weight: 900; font-family: 'Times New Roman', Times, serif; color: white;">Select Doctor:</label>
+                  <select class="form-select" id="sid" name="doctor" size="0" style="border: 3px solid black; font-size: 22px;">
+                    {% for dr in drs %}
+                    <option value="{{ dr }}">{{ dr }}</option>
+                    {% endfor %}
+                  </select>
+                </div>
+              </div>
+              <div>
+  
+                <script type="text/javascript">
+                   $(function () {
+                       $('#datetimepicker3').datetimepicker({
+                           format: 'LT'
+                       });
+                   });
+                </script>
+                </div>
+                
+              </div>
+              
+              
+              <div>
+                <input type="submit" class="btn btn-primary" value="Book Appointment" style="    margin: 10px 150px 0px; color: white; border: 3px solid; font-family: 'Times New Roman', Times, serif; font-weight: 900; background-color: #535cf0;"></input>
+              </div>
+          </form>
+          {% if messages %} {% for message in messages %}
+                <div class="alert alert-warning" role="alert">{{message}}</div>
+                {%endfor%} {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
